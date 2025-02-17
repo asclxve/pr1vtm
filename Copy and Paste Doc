@@ -10,3 +10,11 @@ Copy and Paste Doc
 		<img src="GIF2.gif" width="350">
 		
 	</div>
+
+	/*#h1
+	color: #e9e4d4;
+	font-size: 75px;
+	margin-top: 10px;
+	text-align: center; 
+
+}*/
