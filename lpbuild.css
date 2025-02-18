@@ -1,12 +1,47 @@
 body{
-	font-family: Ciutadella;
-	color: #c0c0c0;
-	background-image: url(gifs/Comp_1.gif);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-color: black;
-	background-position-x: center;
-	
+	font-family: Mynerve;
+	background: #e6e4d8;
+}
+
+header{
+	background: #e6e4d8;
+
+}
+
+img{
+	border: 15px ridge #c0c0c0;
+	display: block;	
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	background: black;
+}
+
+main{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	margin-left: 100px;
+	margin-right: 100px;
+	row-gap: 25px;
+}
+.button{
+	font-family: Mynerve;
+	font-weight: bold;
+	color: #404040;
+	font-size: 50px;
+	text-shadow: 1px 1px 0px #000000;
+	box-shadow: 2px 2px 3px #000000;
+	padding: 10px 25px;
+	border-radius: 10px;
+	border: 5px ridge #A8A79E;
+	background: #C0C0C0;
+	background: linear-gradient(to top, #C0C0C0, #E6E4D8);
+}
+
+.button:hover{
+	color: #14396A;
+ 	background: #B672CF;
 }
 
 .glitch-wrapper {
@@ -16,13 +51,14 @@ body{
    align-items: center;
    justify-content: center;
    text-align: center;
+   background: linear-gradient(to top, #C0C0C0, #E6E4D8);
 }
 
 .glitch {
    position: relative;
-   font-size: 85px;
+   font-size: 50px;
    font-weight: bold;
-   color: #C0C0C0;
+   color: #404040;
    letter-spacing: 3px;
    z-index: 1;
 }
@@ -34,7 +70,7 @@ body{
    left: -2px;
    width: 100%;
    color: 50px;
-   background-color: #000000;
+   background: linear-gradient(to top, #C0C0C0, #E6E4D8);
    overflow: hidden;
    clip: rect(0, 900px, 0, 0);
    animation: noise-before 3s infinite linear alternate-reverse;
@@ -47,7 +83,7 @@ body{
    left: 2px;
    width: 100%;
    color: 50px;
-   background-color: #000000;
+   background: linear-gradient(to top, #C0C0C0, #E6E4D8);
    overflow: hidden;
    clip: rect(0, 900px, 0, 0);
    animation: noise-after 2s infinite linear alternate-reverse;
