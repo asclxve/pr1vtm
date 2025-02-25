@@ -108,7 +108,7 @@ footer{
    left: 2px;
    width: 100%;
    color: 50px;
-   background: linear-gradient(to top, #C0C0C0, #E6E4D8);
+   background: black
    overflow: hidden;
    clip: rect(0, 900px, 0, 0);
    animation: noise-after 2s infinite linear alternate-reverse;
