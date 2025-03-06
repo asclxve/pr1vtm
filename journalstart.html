@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>start</title>
+	<link rel="stylesheet" type="text/css" href="css-pages/jstart.css">
+	<script>
+		var pages = document.getElementsByClassName('page');
+  for(var i = 0; i < pages.length; i++)
+    {
+      var page = pages[i];
+      if (i % 2 === 0)
+        {
+          page.style.zIndex = (pages.length - i);
+        }
+    }
+
+  document.addEventListener('DOMContentLoaded', function(){
+    for(var i = 0; i < pages.length; i++)
+      {
+        pages[i].pageNum = i + 1;
+        pages[i].onclick=function()
+          {
+            if (this.pageNum % 2 === 0)
+              {
+                this.classList.remove('flipped');
+                this.previousElementSibling.classList.remove('flipped');
+              }
+            else
+              {
+                this.classList.add('flipped');
+                this.nextElementSibling.classList.add('flipped');
+              }
+           }
+        }
+  })
+	</script>
+</head>
+<body>
+	<div class="book">
+  	<div class="pages" class="pages">
+	    <div class="page"><p> Open Me <br>please!</p></div>
+	    <div class="page"></div>
+	    <div class="page"><p>Hello there!</p></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+	    <div class="page"></div>
+  </div>
+</div>
+
+</body>
+</html>
